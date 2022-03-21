@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     
     //evaluation according to direction in which elements should be visualized
-    @if ($dir == row){
+    @if ($direction == row){
         justify-content: $alignh;
         align-content: $alighv;
     } @else {
