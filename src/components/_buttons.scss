@@ -1,10 +1,8 @@
-@import "settings/variables";
+
 .menu{
     li{
-        padding: 5%;
+        padding: 1%;
         border-radius: 5px;
-        background-color: lighten($color: green, $amount: (15));
-        color: darken($color:red, $amount: (15));
         transition: all 500ms ease-in-out;
     }
 
@@ -14,7 +12,14 @@
         $animtime:($i*250)+250ms;
 
         li:nth-child(#{$i}){
-            animation: animbutt 1750ms ease-in-out;
+            animation: animbutt $animtime ease-in-out;
+            background-color: lighten($color: green, $amount: ($i*3));
+            a{
+                color: darken($color: red, $amount: ($i*3));
+                animation: animtext $animtime ease-in-out;
+            }
+
+            
         }    
     }
 }
@@ -23,12 +28,20 @@
 //animation
 @keyframes animbutt{
 0%{
-    background-color: $accent;
-    letter-spacing: -5%;
+    background-color: red;
 }
 100%{
-    background-color: $primary;
-    letter-spacing: 10%;
+    background-color: green;
 }
 
+}
+
+@keyframes animtext{
+0%{
+    letter-spacing: -10px;
+}
+100%{
+    letter-spacing: 0;
+}
+    
 }
