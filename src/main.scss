@@ -1,9 +1,0 @@
-@import "settings/variables";
-@import "settings/general";
-@import "components/bar";
-@import "components/buttons";
-
-*{
-   @extend %basics;
-   padding: 1%;
-}

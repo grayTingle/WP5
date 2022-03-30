@@ -1,0 +1,190 @@
+/**make a placeholder for an explicit grid based on areas*/
+body {
+  display: -ms-grid;
+  display: grid;
+  width: 98%;
+      grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8";
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5%;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area1 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area2 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area2;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area3 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: area3;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area4 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: area4;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area5 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: area5;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area6 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: area6;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area7 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: area7;
+}
+
+/** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+/**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+/**tldr i have no idea*/
+.area8 {
+  /**so anything you put in here will be applied to every grid area*/
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: area8;
+}
+
+/**this is for making it work on mobile, since instead of squishing it all interpolates*/
+@media all and (max-width: 700px) {
+  body {
+        grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8";
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area1 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: area1;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area2 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: area2;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area3 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: area3;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area4 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: area4;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area5 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: area5;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area6 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: area6;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area7 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: area7;
+  }
+  /** making namearea so we have a variable, then area bc it's the name and plus $i bc we've established that $i is one through eight*/
+  /**so it's area number $i (which is one through eight,) then the area is namearea which we've named after area and its corresponding number*/
+  /**tldr i have no idea*/
+  .area8 {
+    /**so anything you put in here will be applied to every grid area*/
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: area8;
+  }
+}
+
+.bigpic img {
+  width: 100%;
+}
+
+.smallgrid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  padding: 1%;
+  gap: 5px;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.smallgrid img {
+  width: 150px;
+}
+/*# sourceMappingURL=princ.css.map */

@@ -1,0 +1,9 @@
+
+@import "config/variables";
+@import "components/grid";
+@import "components/bigpic";
+@import "components/smallgrid";
+
+body{
+@extend %gridareas;
+}
