@@ -186,5 +186,127 @@ body {
 
 .smallgrid img {
   width: 150px;
+  -webkit-transition: -webkit-transform .2s all ease-in-out;
+  transition: -webkit-transform .2s all ease-in-out;
+  transition: transform .2s all ease-in-out;
+  transition: transform .2s all ease-in-out, -webkit-transform .2s all ease-in-out;
+}
+
+.smallgrid img :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contactbutton {
+  list-style: none;
+  color: #54547e;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4%;
+}
+
+.contactbutton li {
+  list-style: none;
+  color: #54547e;
+  border: none;
+  margin: 2%;
+}
+
+.contactbutton span {
+  color: blue;
+  margin: 2%;
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+
+.contactbutton span:hover {
+  background-color: antiquewhite;
+}
+
+.buttonwords {
+  list-style: none;
+  color: #54547e;
+  margin: 2%;
+}
+
+.buttonwords li {
+  list-style: none;
+  color: #54547e;
+  border: none;
+  margin: 2%;
+}
+
+.buttonwords p {
+  display: inline;
+  margin: 4%;
+}
+
+.buttonwords span {
+  color: blue;
+  margin: 2%;
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+
+.buttonwords span:hover {
+  background-color: antiquewhite;
+}
+
+.goto {
+  text-decoration: none;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: #ececf5;
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #45455b;
+  font-family: fantasy;
+}
+
+p {
+  color: #43435c;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5%;
+}
+
+label {
+  color: #43435c;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5%;
+}
+
+section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pics {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.picshover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body {
+  background-color: #adadb5;
 }
 /*# sourceMappingURL=princ.css.map */

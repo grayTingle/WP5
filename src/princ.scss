@@ -1,9 +1,16 @@
 
 @import "config/variables";
+@import "config/mixins";
 @import "components/grid";
 @import "components/bigpic";
 @import "components/smallgrid";
+@import "components/buttons";
+@import "components/titles";
+@import "components/misc";
+
+
 
 body{
 @extend %gridareas;
+background-color: rgb(173, 173, 181);
 }

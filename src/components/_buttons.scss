@@ -1,0 +1,41 @@
+.contactbutton{
+    @include buttons;
+    li{
+        @include lists;
+    }
+    display: flex;
+    padding: 4%;
+    span{
+        @include spans;
+    }
+}
+
+.buttonwords{
+    @include buttons;
+    li{
+        @include lists;
+    }
+    
+    p{
+     display: inline;
+     margin: 4%;   
+    }
+    span{
+        @include spans;
+    }
+
+}
+
+.goto{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+button{
+    @include butts;
+    transition: background-color ease-in-out 200ms;
+    &:hover{
+        background-color: antiquewhite;
+    }
+}

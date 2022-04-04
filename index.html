@@ -15,60 +15,62 @@
         <section class="area1">
             <h1>Title</h1>
             <p>Adipisci hic perferendis, possimus accusamus, error inventore numquam aliquam et totam officiis facere ab sint! Optio praesentium, ut asperiores natus rem minus rerum! Mollitia temporibus adipisci voluptatibus illo molestias vitae. Consectetur, quia. Optio cupiditate quod ipsum sint ipsa ipsam aliquid delectus enim voluptate atque? Reprehenderit, culpa doloribus nostrum tempora iusto incidunt, debitis exercitationem laudantium architecto quis sint nulla, dolore omnis. Ut expedita, harum facilis odit provident blanditiis vero et suscipit qui fuga voluptates id error a placeat consequatur dignissimos labore laboriosam impedit distinctio quisquam.</p>
-            <button><!--button here--></button>
+            <div class="goto"><a href="#gallery"><button class="man"><p>Go to Gallery</p></button></a></div>
         </section>
 
-        <section class="area2 bigpic">
-        <img src="public\images\frog1.jpg">
+        <section id="frog" class="area2 bigpic">
+        <img class="pics" src="public\images\frog1.jpg">
         </section>
 
         <section class="area3">
         <!--the one with the buttons-->
-            <ul>
-                <li><span class="material-icons">palette</span></li>
-                <li><span class="material-icons">brush</span></li>
-                <li><span class="material-icons">fiber_smart_record</span></li>
-                <li><span class="material-icons">party_mode</span></li>
+            <ul class="buttonwords">
+                <li><button><a href="#frog"></a><span class="material-icons">person</span></button><p class="butext">Who We Are</p></li>
+                <li><button><a href="#gallery"></a><span class="material-icons">brush</span></button><p class="butext">Gallery</p></li>
+                <li><button><a href="#form"></a><span class="material-icons">fiber_smart_record</span></button><p class="butext">Send Feedback</p></li>
+                <li><button><a href="#contact"></a><span class="material-icons">circle</span></button><p class="butext">Contacts</p></li>
             </ul>
         </section>
 
         <section class="area4">
         <!--info info-->
-        <h1>another title</h1>
+        <h2>another title</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in accusamus eligendi rem cum tempore, quia voluptatum? Velit, aspernatur voluptatem? Neque, laudantium ab quis dolores est eius veritatis vitae. Architecto?Quod repellendus amet corporis fuga consectetur qui. Ea facere unde perspiciatis officia voluptate cum eveniet obcaecati delectus magni dolores earum modi, excepturi dignissimos aspernatur nam aliquid! Aperiam, iusto ea. Minima.</p>
         </section>
 
         <section class="area5">
         <!--contacts-->
-        <h1>contact part</h1>
-        <ul>
-            <li><!--button n then text--></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <h2 id="contact">contact part</h2>
+        <ul class="contactbutton">
+            <li><a href="#gallery"><button><span class="material-icons">palette</span><p>Contact Us</p></button></a></li>
+            <li><a href="#gallery"><button><span class="material-icons">palette</span><p>Contact Us</p></button></a></li>
+            <li><a href="#gallery"><button><span class="material-icons">palette</span><p>Contact Us</p></button></a></li>
+            <li><a href="#gallery"><button><span class="material-icons">palette</span><p>Contact Us</p></button></a></li>
         </ul>
         </section>
 
-        <section class="area6 smallgrid">
+        <section id="gallery" class="area6 smallgrid">
         <!--image gallery-->
-            <img src="/public/images/frog1.jpg" alt="frog1">
-            <img src="/public/images/frog2.jpg" alt="frog2">
-            <img src="/public/images/frog3.jpg" alt="frog3">
-            <img src="/public/images/frog4.jpg" alt="frog4">
-            <img src="/public/images/frog5.jpg" alt="frog5">
-            <img src="/public/images/frog6.jpg" alt="frog6">
+            <img class="pics" src="/public/images/frog1.jpg" alt="frog1">
+            <img class="pics" src="/public/images/frog2.jpg" alt="frog2">
+            <img class="pics" src="/public/images/frog3.jpg" alt="frog3">
+            <img class="pics" src="/public/images/frog4.jpg" alt="frog4">
+            <img class="pics" src="/public/images/frog5.jpg" alt="frog5">
+            <img class="pics" src="/public/images/frog6.jpg" alt="frog6">
         </section>
 
         <section class="area7">
-        <h1>who are we</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel nesciunt rem consequuntur distinctio illo temporibus. Aut sed aspernatur maiores iure dolor, molestiae odio! Cum cumque aperiam dignissimos labore provident.</p>
+        <h2>who are we</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel nesciunt rem consequuntur distinctio illo temporibus. Aut sed aspernatur maiores iure dolor, molestiae odio! But the real questions is, who are <i>you?</i> Cum cumque aperiam dignissimos labore provident.</p>
         </section>
 
-        <section class="area8">
+        <section id="form" class="area8">
         <!--form   put the qualifiers n all in but i forgot how, rip-->
             <form>
-                <label>write something in here pls and thank you</label><br>
-                <input type="text">
+                <label>Write something in here pls and thank you</label><br>
+                <textarea rows = "5" cols = "60" name = "description">
+                    Enter details here...
+                 </textarea>
             </form>
         </section>
 

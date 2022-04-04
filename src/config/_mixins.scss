@@ -1,0 +1,28 @@
+@mixin buttons{
+list-style: none;
+color: $buttontext;
+margin: 2%;
+
+}
+
+@mixin lists{
+    list-style: none;
+    color: $buttontext;
+    border: none;
+    margin: 2%;
+
+}
+
+@mixin spans{
+    color: $span;
+    margin: 2%;
+    transition: background-color ease-in-out 200ms;
+    &:hover{
+        background-color: antiquewhite;
+    }
+}
+
+@mixin butts{
+    border: none;
+    background-color: $buttonbg;
+}
