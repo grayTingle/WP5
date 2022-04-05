@@ -17,12 +17,19 @@ margin: 2%;
     color: $span;
     margin: 2%;
     transition: background-color ease-in-out 200ms;
-    &:hover{
-        background-color: antiquewhite;
-    }
 }
 
 @mixin butts{
     border: none;
     background-color: $buttonbg;
+    transition: all 200ms ease-in-out;
+}
+
+@mixin animate {
+    @keyframes anim {
+        0%{}
+        100%{}
+    }
+    animation: anim 600ms ease-in-out;
+    animation-delay: 1s;
 }

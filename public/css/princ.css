@@ -221,10 +221,6 @@ body {
   transition: background-color ease-in-out 200ms;
 }
 
-.contactbutton span:hover {
-  background-color: antiquewhite;
-}
-
 .buttonwords {
   list-style: none;
   color: #54547e;
@@ -250,10 +246,6 @@ body {
   transition: background-color ease-in-out 200ms;
 }
 
-.buttonwords span:hover {
-  background-color: antiquewhite;
-}
-
 .goto {
   text-decoration: none;
   text-align: center;
@@ -262,12 +254,29 @@ body {
 button {
   border: none;
   background-color: #ececf5;
-  -webkit-transition: background-color ease-in-out 200ms;
-  transition: background-color ease-in-out 200ms;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 button:hover {
-  background-color: antiquewhite;
+  -webkit-animation: anim 600ms ease-in-out;
+          animation: anim 600ms ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes anim {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes anim {
+  0% {
+  }
+  100% {
+  }
 }
 
 h1, h2 {

@@ -34,8 +34,8 @@
 
 button{
     @include butts;
-    transition: background-color ease-in-out 200ms;
+
     &:hover{
-        background-color: antiquewhite;
+    @include animate;
     }
 }
